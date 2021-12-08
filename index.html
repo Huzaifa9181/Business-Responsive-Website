@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buisness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- counter -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="app.js"></script>
+
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <img src="images/main-img2.jpg" class="img-fluid" id="main-img" alt="main-img">
+    <!-- navbar -->
+    <nav id="nav-con" class="navbar navbar-expand-lg navbar-light">
+        <div class=" container-fluid">
+            <a class="navbar-brand top-head" href="# ">Age<span class="sub-log">n</span>cy</a>
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarNavDropdown " aria-controls="navbarNavDropdown " aria-expanded="false " aria-label="Toggle navigation ">
+            <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown ">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page " href="# ">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Features</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="# " id="navbarDropdownMenuLink " role="button " data-bs-toggle="dropdown " aria-expanded="false ">
+                    Dropdown link
+                </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink ">
+                            <li><a class="dropdown-item " href="# ">Action</a></li>
+                            <li><a class="dropdown-item " href="# ">Another action</a></li>
+                            <li><a class="dropdown-item " href="# ">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">
+                            <i class="bi bi-search sear"></i>
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="# ">
+                            <button id="btn-head" class="btn btn-light" type="submit"><span id="btn-span">Button<i class="bi bi-arrow-right arr"></i></span></button>
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">
+                            <i id="moon-sun" class="bi bi-moon moon"></i>
+                            <i id="sun-moon" class="bi bi-brightness-high-fill sun"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        $("#sun-moon").hide()
+        $("#moon-sun").click(function() {
+            $(this).hide()
+            $("#sun-moon").show()
+            $("body").css("background-color", "#121212");
+            $(".box-wrap").css("background-color", "#121212");
+            $("h1").css("color", "white");
+            $("h2").css("color", "white");
+            $("h3").css("color", "white");
+            $("h4").css("color", "white");
+            $("h5").css("color", "white");
+            $("h6").css("color", "white");
+            $(".counter").css("color", "white");
+            $("p").css("color", "white");
+            $(".para-cen").css("color", "#0066ff");
+            $("a").css("color", "white");
+        })
+        $("#sun-moon").click(function() {
+            $(this).hide()
+            $("#moon-sun").show()
+            $("body").css("background-color", "white");
+            $(".box-wrap").css("background-color", "white");
+            $("h1").css("color", "black");
+            $("h2").css("color", "black");
+            $("h3").css("color", "black");
+            $("h4").css("color", "black");
+            $(".heading-01").css("color", "white");
+            $("#para-09").css("color", "#747576");
+            // $("h5").css("color", "black");
+            // $("h6").css("color", "black");
+            $(".counter").css("color", "black");
+            $("p").css("color", "black");
+            $(".para-cen").css("color", "#0066ff");
+            $(".footer-a").css("color", "#747576");
+
+
+        })
+    </script>
+
+    <div class="container">
+        <!-- header content -->
+        <div class="row" id="header-row">
+            <h3 id="h3">Digital Agency</h3>
+            <h1 id="Content-header">Why Wait ? Start Your <br> Own Buisness.</h1>
+            <button id="btn-header" type="button" class="btn btn-primary "><span>Read More<i class="bi bi-arrow-right arr"></i></span></button>
+        </div>
+
+        <div class="row mt-5">
+            <p class="para-cen">WHO WE ARE</p>
+            <h1>What We Offer To Highest <br>Quality Services</h1>
+            <div class="col-md-5 mt-5">
+                <img src="images/1.jpg" class="img-fluid" id="img1" alt="">
+            </div>
+            <div class="col-md-6 mt-5 mb-3">
+                <h4 id="head">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.Pellen tesque libero ut justo, ultrices in ligula.</h4>
+
+                <p class="para-center">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Learn more about our work! Lorem ipsum viverra feugiat.consectetur adipisicing dolor et amet.</p>
+
+                <p class="para-center">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Learn more about our work! Lorem ipsum viverra feugiat.consectetur adipisicing dolor et amet.</p>
+                <button id="btn-header2" type="button" class="btn btn-primary "><span>Read More<i class="bi bi-arrow-right arr"></i></span></button>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-3">
+            <p class="para-cen">WHO WE ARE</p>
+            <h1>We are more than just <br>a digital agency.</h1>
+            <div class="col-md-4 mt-5 ">
+                <h4 id="heading-center">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.Pellen tesque libero ut justo, ultrices in ligula.</h4>
+                <p class="para-center2 mt-5">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Learn more about our work</p>
+                <p class="para-center2">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Learn more about our work</p>
+                <button id="btn-header3" type="button" class="btn btn-primary "><span>Read More<i class="bi bi-arrow-right arr"></i></span></button>
+            </div>
+
+            <div class="col-md-6 mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 box-wrap">
+                        <div class="grid">
+                            <p><i class="bi bi-lightbulb bulb"></i></p>
+                            <div class="info">
+                                <h3 id="heading-spec">Idea & Analysis</h3>
+                                <p class="para-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis minima suscipit temporibus expedita. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+
+                    <div class="col-md-6 box-wrap">
+                        <div class="grid">
+                            <p><i class="bi bi-brush-fill bulb"></i></p>
+                            <div class="info">
+                                <h3 id="heading-spec">Designing</h3>
+                                <p class="para-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis minima suscipit temporibus expedita. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+
+                    <div class="col-md-6 box-wrap">
+                        <div class="grid">
+                            <p><i class="bi bi-graph-up-arrow bulb"></i></i>
+                            </p>
+                            <div class="info">
+                                <h3 id="heading-spec">Developement</h3>
+                                <p class="para-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis minima suscipit temporibus expedita. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+
+                    <div class="col-md-6 box-wrap">
+                        <div class="grid">
+                            <p><i class="bi bi-megaphone bulb"></i></p>
+                            <div class="info">
+                                <h3 id="heading-spec2">Online Marketing</h3>
+                                <p class="para-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis minima suscipit temporibus expedita. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-3 ">
+            <p class="para-cen">WHY US</p>
+            <h1>Our Working Process To Help <br> You Boost Your Business</h1>
+            <div class="col-md-5">
+                <div class="mt-5 mb-5 f-padding">
+                    <span style="display: flex;"><i class="bi bi-hand-thumbs-up-fill icon"></i>
+                    <h4 class="heading-bottom"><a href="#">Perfect Strategy</a></h4></span>
+                    <p class="para-01">Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.</p>
+                </div>
+
+                <!-- 2 -->
+
+                <div class="mt-5 mb-5 f-padding">
+                    <span style="display: flex;"><i class="bi bi-lightbulb icon"></i>
+                    <h4 class="heading-bottom"> <a href="#">Innovative Ideas</a></h4></span>
+                    <p class="para-01">Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.</p>
+                </div>
+
+                <!-- 3 -->
+
+                <div class="mt-5 mb-5 f-padding">
+                    <span style="display: flex;"><i class="bi bi-cursor-fill icon"></i>
+                    <h4 class="heading-bottom"><a href="#">Effective Solutions</a></h4></span>
+                    <p class="para-01">Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.</p>
+                </div>
+
+                <!--3  -->
+
+                <div class="mt-5 mb-5 f-padding">
+                    <span style="display: flex;"><i class="bi bi-laptop icon"></i>
+                    <h4 class="heading-bottom">
+                        <a href="#"> Testing & Launching</a>
+                    </h4></span>
+                    <p class="para-01">Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <img src="images/2.jpg" id="main-img-2" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-5 mb-3">
+            <p class="para-cen">OUR START</p>
+            <h1>We do design,code <br> and develop.</h1>
+            <div class="col-md-6 mt-5">
+                <img src="images/3.jpg" class="img-fluid img-lap" alt="">
+            </div>
+            <div class="col-md-6 mt-5 mb-3">
+                <h4 id="head3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.Pellen tesque libero ut justo, ultrices in ligula.</h4>
+                <p class="para-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Learn more about our work! Lorem ipsum viverra feugiat.consectetur adipisicing dolor et amet.</p>
+                <p class="para-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. tempufddfel.consectetur adipisicing dolor et amet.</p>
+                <button id="btn-header4" type="button" class="btn btn-primary "><span>Read More<i class="bi bi-arrow-right arr"></i></span></button>
+
+                <!-- counter -->
+                <section class="counters">
+                    <div class="countainer text-center">
+                        <div id="div1" class="cont-div">
+                            <div class="counter" data-target="2021">2020</div>
+                            <p id="para-cent">Projects </p>
+                        </div>
+                        <div id="div2" class="cont-div">
+                            <div class="counter" data-target="3000">3000</div>
+                            <p id="para-cent">Specialists</p>
+                        </div>
+                    </div>
+                </section>
+
+                <script>
+                    $('.counter').counterUp({
+                        delay: 10,
+                        time: 2000
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 mb-3">
+            <p class="para-cen">INSIGHT AND TRENDS</p>
+            <h1>Latest Blog & News</h1>
+            <div class="col-md-6 mt-5 mb-3">
+                <img src="images/blog.jpg" class="img-fluid blog-img" alt="blog-img-1">
+                <p class="para-5">December 8, 2021.</p>
+                <h2>Hello World!</h2>
+                <button id="btn-header5" type="button" class="btn btn-primary mt-5"><span>Read More<i class="bi bi-arrow-right arr"></i></span></button>
+            </div>
+            <div class="col-md-6 mt-5 mb-3">
+                <img src="images/blog2.jpg" class="img-fluid blog-img" alt="blog-img-2">
+                <p class="para-5">Dec 8, 2021.</p>
+                <h3>You can now listen to the entire library of Design Better books for free</h3>
+                <button id="btn-header6" type="button" class="btn btn-primary mt-5"><span>Read More<i class="bi bi-arrow-right arr"></i></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-5 mb-1 contact-row ">
+            <div class="col-md-4">
+                <h3 class="mb-3">Call Our Support</h3>
+                <span><p class="blog-para">24 / 7 Support Line :<i class="bi bi-telephone-fill"></p></i><p class="blog-para"> +1(21) 234 557 4567</p>
+                </span>
+            </div>
+            <div class="col-md-4">
+                <h3 class="mb-3">Our Location</h3>
+                <p>Shipper, #2214 Honey street, NY - 62617..</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="mb-3">Our Newsletter</h3>
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <input type="email" class="form-control-plaintext" id="Email2" placeholder="email@example.com">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3 p-2">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row text-white footer">
+            <div class="col-md-3">
+                <h4 class="heading-01">Age<span class="sub-log">n</span>cy</h4>
+                <h6 id="para-09" class="para-footer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, assumenda nesciunt? Tempora odit.</h6>
+            </div>
+            <div class="col-md-3">
+                <h5>Want to work with us?</h5>
+                <h6 id="para-08" class="para-footer">Use This Email</h6>
+                <a class="footer-a" href="#">mail@example.com</a>
+            </div>
+            <div class="col-md-3">
+                <h5>Want to say hi?</h5>
+                <h6 id="para-07" class="para-footer">Genenaral Inquires</h6>
+                <a class="footer-a " href="#">support@example.com</a>
+            </div>
+            <div class="col-md-3">
+                <h5>Find us on social media.</h5>
+                <h6 id="para-06" class="para-footer">Social Media</h6>
+                <div class="footer-icon">
+                    <span class="footer-sp"><a href=""><i class="bi bi-facebook"></a></i></span>
+                    <span class="footer-sp"><a href=""><i class="bi bi-twitter"></a></i></span>
+                    <span class="footer-sp"><a href=""><i class="bi bi-instagram"></a></i></span>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12 text-center">
+                <span style="display: flex;" class="span-footer"><i class="bi bi-coin coin"></i>
+                <h6>2021 Agency. All Rights Reserved | Designed By Huzaifa</h6></span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
